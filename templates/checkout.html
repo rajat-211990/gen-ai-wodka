@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Gen - Checkout</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <nav>
+        <!-- Include navigation links here -->
+    </nav>
+
+    <section>
+        <h2>Complete Your Purchase</h2>
+        <p>Thank you for choosing AI Gen's services. To complete your purchase, please fill out the required information below:</p>
+    </section>
+
+    <section>
+        <h2>Billing Information</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea><br>
+
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment" required>
+                <option value="creditcard">Credit Card</option>
+                <option value="debitcard">Debit Card</option>
+                <option value="paypal">PayPal</option>
+            </select><br>
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </section>
+    
+    <section>
+        <h2>Checkout Process</h2>
+        <p>Our streamlined checkout process ensures a hassle-free experience when completing your purchase. Follow these simple steps to finalize your order:</p>
+    
+        <ol>
+            <li><strong>Review Your Cart:</strong> Before proceeding, review the items in your shopping cart to ensure they are correct.</li>
+            <li><strong>Provide Billing Information:</strong> Enter your billing details, including your name, email, and billing address.</li>
+            <li><strong>Choose Payment Method:</strong> Select your preferred payment method from options such as credit card, debit card, or PayPal.</li>
+            <li><strong>Verify Order Summary:</strong> Double-check the order summary to verify the items, quantities, and total price.</li>
+            <li><strong>Place Your Order:</strong> Click the "Place Order" button to initiate the payment process.</li>
+            <li><strong>Payment Confirmation:</strong> You will receive an order confirmation and payment receipt via email once your payment is successfully processed.</li>
+            <li><strong>Delivery Information:</strong> Expect a follow-up email with delivery information and tracking details for your order.</li>
+        </ol>
+    
+        <p>If you encounter any issues or have questions during the checkout process, please don't hesitate to contact our support team. We are here to assist you in every step of your purchase.</p>
+    </section>
+    
+</body>
+</html>
